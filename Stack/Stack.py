@@ -29,7 +29,7 @@ class Stack:
 
     def isEmpty(self):
         if self.top == -1:
-            print('Stack overflow')
+            print('Stack underflow')
             return True
         else:
             return False

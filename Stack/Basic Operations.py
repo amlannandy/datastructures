@@ -2,7 +2,6 @@ from Stack import Stack
 
 
 def printInstructions():
-    print('Stack Tech')
     print('Command List')
     print('1. Push')
     print('2. Pop')
@@ -14,7 +13,7 @@ def printInstructions():
 stack = Stack()
 
 while True:
-    choice = int(input('Enter your command: '))
+    choice = int(input('Enter your command: [0 for Commands List]'))
     if choice == 0:
         printInstructions()
     elif choice == 1:
@@ -23,7 +22,7 @@ while True:
     elif choice == 2:
         stack.pop()
     elif choice == 3:
-        stack.peek()
+        print(f'Item on top is {stack.peek()}')
     elif choice == 4:
         stack.display()
     elif choice == 5:

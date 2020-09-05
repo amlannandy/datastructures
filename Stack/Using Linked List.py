@@ -18,6 +18,7 @@ class Stack:
             return
         node.next = self.head
         self.head = node
+        self.top += 1
 
     def pop(self):
         if self.head is None:

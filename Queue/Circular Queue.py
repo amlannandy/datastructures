@@ -1,12 +1,12 @@
-# class Queue:
+class Queue:
 
-#   def __init__(self, size):
-#     self.queue = []
-#     self.rear = -1
-#     self.front = 0
-#     self.size = size
+    def __init__(self, size):
+        self.queue = []
+        self.rear = -1
+        self.front = 0
+        self.size = size
 
-#   def enqueue(self, item):
+    def enqueue(self, item):
 
-
-#   def isEmpty(self):
+    def isEmpty(self):
+        if self.rear

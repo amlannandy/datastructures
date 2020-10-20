@@ -7,7 +7,7 @@ def binary_search(arr, item, beg, end):
     elif arr[mid] < item:
         return binary_search(arr, item, mid + 1, end)
     elif arr[mid] > item:
-        return binary_search(arr, item, beg, mid)
+        return binary_search(arr, item, beg, mid - 1)
 
 arr = list(map(int, input('Enter your array: ').split()))
 item = int(input('Enter search item: '))

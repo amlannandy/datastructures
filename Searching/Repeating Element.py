@@ -6,11 +6,9 @@ def repeating_element(arr):
         if slow == fast:
             break
     slow = arr[0]
-    while True:
+    while slow != fast:
         slow = arr[slow]
         fast = arr[fast]
-        if slow == fast:
-            break
     return slow
 
 arr = list(map(int, input('Enter Array: ').split()))

@@ -1,6 +1,5 @@
 from Node import Node
 
-
 def preOrderTraversal(root: Node):
     if root is None:
         return

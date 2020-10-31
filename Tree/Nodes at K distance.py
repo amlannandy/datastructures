@@ -4,10 +4,10 @@ def node_at_k(root, k):
     if not root:
         return
     if k == 0:
-        print(root.val, end=' ')
+        print(root.val)
     node_at_k(root.left, k - 1)
     node_at_k(root.right, k - 1)
-
+    
 root = Node(1)
 root.left = Node(2)
 root.left.left = Node(3)

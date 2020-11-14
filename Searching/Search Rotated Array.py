@@ -5,7 +5,7 @@ def searchRotatedArray(arr, item):
         if arr[mid] == item:
             return mid
         # when left side is sorted
-        elif arr[beg] < arr[mid]:
+        elif arr[beg] <= arr[mid]:
             if item >= arr[beg] and item < arr[mid]:
                 end = mid - 1
             else:

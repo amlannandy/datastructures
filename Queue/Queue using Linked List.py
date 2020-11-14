@@ -22,7 +22,7 @@ class Queue:
     def dequeue(self):
         if self.isEmpty():
             return
-        if self.head is None:
+        if self.head.next is None:
             self.head = None
             return
         self.head = self.head.next

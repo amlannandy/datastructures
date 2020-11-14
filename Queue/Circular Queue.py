@@ -70,8 +70,8 @@ class Queue:
         return self.front == 0 and self.rear == -1
 
     def isFull(self):
-        if self.
-        return self.front == 0 and self.rear == self.size - 1
+        if self:
+            return self.front == 0 and self.rear == self.size - 1
 
 
 def printInstructions():

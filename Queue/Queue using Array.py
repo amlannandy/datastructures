@@ -1,6 +1,6 @@
 class Queue:
     def __init__(self, size):
-        self.queue = []
+        self.queue = [0] * size
         self.rear = -1
         self.front = 0
         self.size = size
@@ -9,7 +9,7 @@ class Queue:
         if self.isFull():
             return
         self.rear += 1
-        self.queue.append(item)
+        self.queue[self.rear] = item
 
     def dequeue(self):
         if self.isEmpty():

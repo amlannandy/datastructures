@@ -47,7 +47,7 @@ class Queue:
             return False
 
     def isFull(self):
-        if self.size == self.getSize():
+        if self.rear == self.size - 1:
             print("Queue Full")
             return True
         else:

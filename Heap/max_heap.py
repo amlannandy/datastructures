@@ -29,11 +29,11 @@ class MaxHeap:
     # Check if node is already max
     if right_child < self.size:
       # Right child exists
-      if self.arr[index] > self.arr[left_child] and self.arr[index] > self.arr[right_child]:
+      if self.arr[index] >= self.arr[left_child] and self.arr[index] >= self.arr[right_child]:
         return
     else:
       # right child does not exist
-      if self.arr[index] > self.arr[left_child]:
+      if self.arr[index] >= self.arr[left_child]:
         return
     # Swap max value to node
     largest = index
